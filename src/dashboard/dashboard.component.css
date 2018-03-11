@@ -1,0 +1,28 @@
+.project-card {
+    width: 300px;
+    position:relative;
+    display: inline-block;
+    margin: 5px;
+    float: left;
+}
+
+mat-card.project-card.mat-card:hover {
+    cursor: pointer;
+}
+
+.mat-card-header {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .project-card {
+       float: none;
+    }
+    .dashboard-sidenav-content {
+        text-align: center;
+    }
+}
+
+.dashboard-sidenav-content {
+    height: 100%;
+}

@@ -1,0 +1,7 @@
+<section class="project-detail">
+    <ul>
+        <li *ngFor="let image of project.images">
+            <a [style.background]="getBackground(image.url)" class="project-image" [style.backgroundSize]="'cover'"></a>
+        </li>
+    </ul>
+</section>

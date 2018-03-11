@@ -1,0 +1,12 @@
+<div class="dashboard-sidenav-content">
+    <mat-card *ngFor="let project of projects" routerLink="/projects/detail/{{project.id}}" class="project-card">
+        <mat-card-header>
+            <div mat-card-avatar class="dashboard-header-image"></div>
+            <mat-card-title>{{project.title}}</mat-card-title>
+            <mat-card-subtitle>{{project.text}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{project.coverurl}}" alt="Photo of {{project.title}}">
+        <mat-card-content>
+        </mat-card-content>
+    </mat-card>
+</div>
